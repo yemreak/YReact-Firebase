@@ -21,6 +21,9 @@ const Navigation = () => (
       <li>
         <Link to={ROUTES.ADMIN}>Admin</Link>
       </li>
+      <li>
+        <Link to={ROUTES.SOME_COMPONENT}>Some Component</Link>
+      </li>
     </ul>
   </div>
 );

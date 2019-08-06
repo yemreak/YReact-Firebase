@@ -22,5 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# os
+# Kişisel dosyalar
 desktop.ini
+.env*

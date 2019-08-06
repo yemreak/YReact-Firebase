@@ -11,6 +11,13 @@ import AccountPage from "../Account";
 import AdminPage from "../Admin";
 
 import * as ROUTES from "../constants/routes";
+import SomeComponent from "../SomeComponents";
+
+/* 
+Bu alanda yapıalcak her değişiklik için alttaki alanlar değişmeli:
+- "../constant/routes"
+- "../Navigation" 
+*/
 
 const App = () => (
   <Router>
@@ -23,6 +30,7 @@ const App = () => (
       <Route path={ROUTES.HOME} component={HomePage} />
       <Route path={ROUTES.ACCOUNT} component={AccountPage} />
       <Route path={ROUTES.ADMIN} component={AdminPage} />
+      <Route path={ROUTES.SOME_COMPONENT} component={SomeComponent} />
     </div>
   </Router>
 );
