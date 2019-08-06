@@ -1,6 +1,6 @@
 # YReact-Firebase <!-- omit in toc -->
 
-Açıklama sonradan eklenecek.
+React ⚛️, React-Router 🔗  ve Firebase 🔥 projesi 
 
 ## İçerikler <!-- omit in toc -->
 
