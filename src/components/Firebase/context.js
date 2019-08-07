@@ -5,7 +5,7 @@ const FirebaseContext = React.createContext(null);
 // !TIP: Firebase ile component kullanımı
 
 /**
- * Firebase erişimi ile componenti çağırma
+ * Firebase props'una erişim hakkı ile componenti çağırma
  * @param {React.Component} Component Firebase erişimi verilecek React Componenti
  */
 export const withFirebase = Component => props => (
