@@ -18,12 +18,13 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
 
 ## Kullanılan Teknolojiler ve Kurulumları
 
-| Teknoloji                                                     | Açıklama                                                                                                            |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| [React](https://reactjs.org/)                                 | Facebook'un oluşturmuş olduğun web framework'u                                                                      |
-| [React Router](https://github.com/ReactTraining/react-router) | Her sayfa değişikliğinde yeniden sunucuya istek atılmaz, sadece giriş kısmında tüm sayfalar sunucudan alınır        |
-| [Firebase](https://firebase.google.com/)                      | Google'ın sunduğu çok verimli (auth, data storage ...) database sistemi                                             |
-| [Recompose](https://github.com/acdlite/recompose)             | `withX(withX(withX...(component)))` yapısındaki karmaşıklığı engelleyerek tek metotda (`compose`) kullanmayı sağlar |
+| Teknoloji                                                     | Açıklama                                                                                                                                                                     |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [React](https://reactjs.org/)                                 | Facebook'un oluşturmuş olduğun web framework'u                                                                                                                               |
+| [React Router](https://github.com/ReactTraining/react-router) | Her sayfa değişikliğinde yeniden sunucuya istek atılmaz, sadece giriş kısmında tüm sayfalar sunucudan alınır                                                                 |
+| [Firebase](https://firebase.google.com/)                      | Google'ın sunduğu çok verimli (auth, data storage ...) database sistemi                                                                                                      |
+| [Recompose](https://github.com/acdlite/recompose)             | `withX(withX(withX...(component)))` yapısındaki karmaşıklığı engelleyerek tek metotda (`compose`) kullanmayı sağlar                                                          |
+| React Context API                                             | En üst bileşenlerden en alt bileşenlere veri (`state`) göndermek için her bir bileşenden verinin aktarılması lazım, bu yapı sayesinde veriler direkt olarak aktarılabilmekte |
 
 ### Nodejs ve React
 
