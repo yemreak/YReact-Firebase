@@ -156,7 +156,6 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
     "iconColour": "#6FA5FF"
   },
   "todo-tree.customHighlight": {
-    // !TIP: Bilgiler (tip)
     "!TIP": {
       "icon": "book",
       "type": "text",
@@ -165,7 +164,6 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
       "opacity": 7,
       "iconColour": "#f5f2a9"
     },
-    // !TODO: Yapılacak (todo)
     "!TODO": {
       "icon": "checklist",
       "type": "text",
@@ -175,7 +173,6 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
       "opacity": 7,
       "iconColour": "#6FA5FF"
     },
-    // !BUG: Hatalar (bug)
     "!BUG": {
       "icon": "bug",
       "type": "text",
@@ -184,7 +181,6 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
       "opacity": 7,
       "iconColour": "#FF2C2C"
     },
-    // !DEV: İyileştirme, geliştirme (dev)
     "!DEV": {
       "icon": "telescope",
       "type": "text",
@@ -193,7 +189,6 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
       "opacity": 7,
       "iconColour": "#72CB6A"
     },
-    // !RES: Gelecek planları, araştırmalar (res)
     "!RES": {
       "icon": "beaker",
       "type": "text",
@@ -202,7 +197,6 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
       "opacity": 7,
       "iconColour": "#9CF7FF"
     },
-    // !WARN: Uyarılar (warn)
     "!WARN": {
       "icon": "megaphone",
       "type": "text",
@@ -211,7 +205,6 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
       "opacity": 7,
       "iconColour": "#CFCC35"
     },
-    // !OLD: Eskimiş, kaldırılacak (deprecated)
     "!OLD": {
       "icon": "trashcan",
       "type": "text",
