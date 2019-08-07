@@ -1,3 +1,5 @@
+// !TIP: Websitesi sayfaları
+// src\components\Navigation\index.js ile alakalıdır.
 export const LANDING = "/";
 export const SIGN_UP = "/signup";
 export const SIGN_IN = "/signin";

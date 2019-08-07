@@ -1,6 +1,6 @@
 # YReact-Firebase <!-- omit in toc -->
 
-React ⚛️, React-Router 🔗  ve Firebase 🔥 projesi 
+React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
 
 ## İçerikler <!-- omit in toc -->
 
@@ -12,6 +12,7 @@ React ⚛️, React-Router 🔗  ve Firebase 🔥 projesi
     - [Firebase Üzerineden Sunum](#Firebase-%C3%9Czerineden-Sunum)
     - [Firebase için Faydalı Notlar](#Firebase-i%C3%A7in-Faydal%C4%B1-Notlar)
 - [Faydalandığım Kaynaklar](#Faydaland%C4%B1%C4%9F%C4%B1m-Kaynaklar)
+- [TODO-Tree Yapılandırması](#TODO-Tree-Yap%C4%B1land%C4%B1rmas%C4%B1)
 - [Destek ve İletişim](#Destek-ve-%C4%B0leti%C5%9Fim)
 
 ## Kullanılan Teknolojiler ve Kurulumları
@@ -26,7 +27,7 @@ React ⚛️, React-Router 🔗  ve Firebase 🔥 projesi
 
 - [Nodejs kurulumu](https://nodejs.org/en/download/)
 - `npm install -g create-react-app`
-- Projenin oluşturulacağı dizine terminal (`cmd` veya `bash`) ile gelin 
+- Projenin oluşturulacağı dizine terminal (`cmd` veya `bash`) ile gelin
 - `create-react-app <proje ismi>` yazın
   - Örn: `YReact-Firebase`
 - `cd <proje ismi>` ile proje dizinine girin
@@ -70,7 +71,7 @@ cd ..
 ```js
 // Örnek config
 const firebaseConfig = {
-  apiKey:"XXXXxxxx",
+  apiKey: "XXXXxxxx",
   authDomain: "xxxxXXXX.firebaseapp.com",
   databaseURL: "https://xxxXXXX.firebaseio.comm",
   projectId: "xxxxXXXX",
@@ -113,18 +114,110 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
 
 #### Firebase için Faydalı Notlar
 
-Çok sık tercih edilen **Firebase class'ı oluşturup, her *component* için onu çağırmak** eylemi sorunlara sebeb olur, çünkü:
+Çok sık tercih edilen **Firebase class'ı oluşturup, her _component_ için onu çağırmak** eylemi sorunlara sebeb olur, çünkü:
 
 - React bileşenlerini test etmesi çok zorlaşır
 - Firebase tek seferlik tanımlanması gereken bir sistem içerir (singleton)
   - Aksi halde hata eğilimli bir davranış sergiler.
- 
+
 > [React Context API](https://www.robinwieruch.de/react-context-api/) tercih edilmelidir. Bu sistem ile firebase örneği tüm componentlerin üstünde tanımlar.
 
 ## Faydalandığım Kaynaklar
 
 - [A Firebase in React Tutorial for Beginners](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/)
 - [Firebase Tutorial](https://www.robinwieruch.de/firebase-tutorial/)
+- [React Kitapları](https://drive.google.com/open?id=1JFHiLsMys29fGLcYMweU33hExWtyG2zV)
+- [Firebase Web İşlemleri](https://firebase.google.com/docs/auth/web/start)
+
+## TODO-Tree Yapılandırması
+
+![](res/todo_tree.png)
+
+<details>
+<summary>Yapılandırmayı göster</summary>
+
+````json
+{
+  "todo-tree.tags": ["!TODO", "!BUG", "!DEV", "!RES", "!OLD", "!WARN", "!TIP"],
+  "todo-tree.labelFormat": "${after}", // (${line})
+  "todo-tree.tagsOnly": true,
+  "todo-tree.defaultHighlight": {
+    "icon": "tasklist",
+    "type": "text",
+    "background": "#6FA5FF",
+    "opacity": 17,
+    "iconColour": "#6FA5FF"
+  },
+  "todo-tree.customHighlight": {
+    // !TIP: Bilgiler (tip)
+    "!TIP": {
+      "icon": "book",
+      "type": "text",
+      "foreground": "#f5f2a9",
+      "background": "#f5f2a9",
+      "opacity": 7,
+      "iconColour": "#f5f2a9"
+    },
+    // !TODO: Yapılacak (todo)
+    "!TODO": {
+      "icon": "checklist",
+      "type": "text",
+      "fontStyle": "normal",
+      "foreground": "#6FA5FF",
+      "background": "#6FA5FF",
+      "opacity": 7,
+      "iconColour": "#6FA5FF"
+    },
+    // !BUG: Hatalar (bug)
+    "!BUG": {
+      "icon": "bug",
+      "type": "text",
+      "foreground": "#FF2C2C",
+      "background": "#FF2C2C",
+      "opacity": 7,
+      "iconColour": "#FF2C2C"
+    },
+    // !DEV: İyileştirme, geliştirme (dev)
+    "!DEV": {
+      "icon": "telescope",
+      "type": "text",
+      "foreground": "#72CB6A",
+      "background": "#72CB6A",
+      "opacity": 7,
+      "iconColour": "#72CB6A"
+    },
+    // !RES: Gelecek planları, araştırmalar (res)
+    "!RES": {
+      "icon": "beaker",
+      "type": "text",
+      "foreground": "#9CF7FF",
+      "background": "#9CF7FF",
+      "opacity": 7,
+      "iconColour": "#9CF7FF"
+    },
+    // !WARN: Uyarılar (warn)
+    "!WARN": {
+      "icon": "megaphone",
+      "type": "text",
+      "foreground": "#CFCC35",
+      "background": "#CFCC35",
+      "opacity": 7,
+      "iconColour": "#CFCC35"
+    },
+    // !OLD: Eskimiş, kaldırılacak (deprecated)
+    "!OLD": {
+      "icon": "trashcan",
+      "type": "text",
+      "foreground": "#959595",
+      "background": "#959595",
+      "opacity": 7,
+      "iconColour": "#959595"
+    }
+  }
+}
+```
+
+</details>
 
 ## Destek ve İletişim
 
@@ -148,3 +241,4 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
 [bağış aylık]: https://www.patreon.com/yemreak/
 
 <!-- İletişim Sonu -->
+````
