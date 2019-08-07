@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 import { withFirebase } from "../Firebase";
 
-import * as ROUTES from "../constants/roles";
+import * as ROUTES from "../constants/routes";
 
 const SignUpPage = () => (
   <div>
@@ -32,13 +32,18 @@ class SignUpFormBase extends Component {
     this.props.firebase
       .doCreateUserWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
+        // !TIP: Giriş başarılı olduğunda yapılacaklar
         this.setState({ ...INITIAL_STATE });
+
+        // Sayfa yönlendirme işlemi
+        this.props.history.push(ROUTES.HOME);
       })
       .catch(error => {
+        // !TIP: Hatalı giriş durumunda yapılacaklar
         this.setState({ error });
       });
 
-    // Sayfa yenilenmesini engelleme
+    // Sayfanın yenilenmesini engeller
     event.preventDefault();
   };
 
@@ -95,7 +100,7 @@ class SignUpFormBase extends Component {
   }
 }
 
-const SignUpForm = withFirebase(SignUpFormBase);
+const SignUpForm = withRouter(withFirebase(SignUpFormBase));
 
 const SignUpLink = () => (
   <p>
