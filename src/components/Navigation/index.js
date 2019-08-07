@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import * as ROUTES from "../constants/routes";
+import SignOutButton from "../SignOut";
 
-// !TIP: Sayfa yönelndirme işlemleri
+// !TIP: Sayfa yönlendirme işlemleri
 
 const Navigation = () => (
   <div>
@@ -28,6 +29,9 @@ const Navigation = () => (
       </li>
       <li>
         <Link to={ROUTES.SOME_COMPONENT}>Some Component</Link>
+      </li>
+      <li>
+        <SignOutButton />
       </li>
     </ul>
   </div>
