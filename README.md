@@ -12,16 +12,18 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
     - [Firebase Üzerineden Sunum](#Firebase-%C3%9Czerineden-Sunum)
     - [Firebase için Faydalı Notlar](#Firebase-i%C3%A7in-Faydal%C4%B1-Notlar)
 - [Faydalandığım Kaynaklar](#Faydaland%C4%B1%C4%9F%C4%B1m-Kaynaklar)
+  - [İleride Bakılacaklar](#%C4%B0leride-Bak%C4%B1lacaklar)
 - [TODO-Tree Yapılandırması](#TODO-Tree-Yap%C4%B1land%C4%B1rmas%C4%B1)
 - [Destek ve İletişim](#Destek-ve-%C4%B0leti%C5%9Fim)
 
 ## Kullanılan Teknolojiler ve Kurulumları
 
-| Teknoloji    | Açıklama                                                                                                     |
-| ------------ | ------------------------------------------------------------------------------------------------------------ |
-| React        | Facebook'un oluşturmuş olduğun web framework'u                                                               |
-| React Router | Her sayfa değişikliğinde yeniden sunucuya istek atılmaz, sadece giriş kısmında tüm sayfalar sunucudan alınır |
-| Firebase     | Google'ın sunduğu çok verimli database sistemi                                                               |
+| Teknoloji                                                     | Açıklama                                                                                                            |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| [React](https://reactjs.org/)                                 | Facebook'un oluşturmuş olduğun web framework'u                                                                      |
+| [React Router](https://github.com/ReactTraining/react-router) | Her sayfa değişikliğinde yeniden sunucuya istek atılmaz, sadece giriş kısmında tüm sayfalar sunucudan alınır        |
+| [Firebase](https://firebase.google.com/)                      | Google'ın sunduğu çok verimli (auth, data storage ...) database sistemi                                             |
+| [Recompose](https://github.com/acdlite/recompose)             | `withX(withX(withX...(component)))` yapısındaki karmaşıklığı engelleyerek tek metotda (`compose`) kullanmayı sağlar |
 
 ### Nodejs ve React
 
@@ -128,6 +130,11 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
 - [Firebase Tutorial](https://www.robinwieruch.de/firebase-tutorial/)
 - [React Kitapları](https://drive.google.com/open?id=1JFHiLsMys29fGLcYMweU33hExWtyG2zV)
 - [Firebase Web İşlemleri](https://firebase.google.com/docs/auth/web/start)
+
+### İleride Bakılacaklar
+
+- [How to fetch data in React](https://www.robinwieruch.de/react-fetching-data/)
+- [React's Render Props Pattern - Children as a Function](https://www.robinwieruch.de/react-render-props-pattern/)
 
 ## TODO-Tree Yapılandırması
 

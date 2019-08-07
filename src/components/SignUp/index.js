@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
+import { compose } from "recompose";
 
 import { withFirebase } from "../Firebase";
 
@@ -100,7 +101,11 @@ class SignUpFormBase extends Component {
   }
 }
 
-const SignUpForm = withRouter(withFirebase(SignUpFormBase));
+// Compose yapısı ile iç içe () olayı engellendi
+const SignUpForm = compose(
+  withRouter,
+  withFirebase
+)(SignUpFormBase);
 
 const SignUpLink = () => (
   <p>
