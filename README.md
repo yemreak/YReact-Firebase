@@ -136,7 +136,7 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
 <details>
 <summary>Yapılandırmayı göster</summary>
 
-````json
+```json
 {
   "todo-tree.tags": ["!TODO", "!BUG", "!DEV", "!RES", "!OLD", "!WARN", "!TIP"],
   "todo-tree.labelFormat": "${after}", // (${line})
@@ -241,4 +241,3 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
 [bağış aylık]: https://www.patreon.com/yemreak/
 
 <!-- İletişim Sonu -->
-````
