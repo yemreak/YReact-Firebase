@@ -26,6 +26,8 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
 | [Recompose](https://github.com/acdlite/recompose)             | `withX(withX(withX...(component)))` yapısındaki karmaşıklığı engelleyerek tek metotda (`compose`) kullanmayı sağlar                                                          |
 | React Context API                                             | En üst bileşenlerden en alt bileşenlere veri (`state`) göndermek için her bir bileşenden verinin aktarılması lazım, bu yapı sayesinde veriler direkt olarak aktarılabilmekte |
 
+> Son kalınan yer: [Password Reset and Password Change with Firebase 🔥](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/#react-firebase-session-handling)
+
 ### Nodejs ve React
 
 - [Nodejs kurulumu](https://nodejs.org/en/download/)
