@@ -44,6 +44,9 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
 - `git clone <url>` ile bu projeyi indirin
 - İndiridiğiniz projenin içine girin `cd YReact-Firebase`
 - `npm install` komutu ile gerekli modülleri yüklemeyi başlatın
+- Firebase üzerinden bilgilerinizi `.env` dosyası oluşturarak içine yazın
+  - Detaylı bilgi için **Firebase Kullanımı** alanına bakın
+  - `.env` dosyası oluşturulmazsa **boş sayfa** gösterecektir
 - `npm start` ile kurulumu test edin
 
 #### Sıfırdan Kurulum
