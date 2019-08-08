@@ -20,7 +20,7 @@ class Firebase {
     this.auth = app.auth();
   }
 
-  // !TIP Firebase ile giriş işlemleri
+  // !TIP Firebase işlemleri
   // Daha fazlası için: https://firebase.google.com/docs/auth/web/start
 
   doCreateUserWithEmailAndPassword = (email, password) =>

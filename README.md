@@ -13,6 +13,7 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
     - [Firebase Kullanımı](#Firebase-Kullan%C4%B1m%C4%B1)
     - [Firebase Üzerineden Sunum](#Firebase-%C3%9Czerineden-Sunum)
     - [Firebase için Faydalı Notlar](#Firebase-i%C3%A7in-Faydal%C4%B1-Notlar)
+    - [Firebase için Yetkiye Göre Sayfa Yönlendirmesi](#Firebase-i%C3%A7in-Yetkiye-G%C3%B6re-Sayfa-Y%C3%B6nlendirmesi)
 - [Faydalandığım Kaynaklar](#Faydaland%C4%B1%C4%9F%C4%B1m-Kaynaklar)
   - [İleride Bakılacaklar](#%C4%B0leride-Bak%C4%B1lacaklar)
 - [Hata Notları](#Hata-Notlar%C4%B1)
@@ -140,6 +141,17 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
   - Aksi halde hata eğilimli bir davranış sergiler.
 
 > [React Context API](https://www.robinwieruch.de/react-context-api/) tercih edilmelidir. Bu sistem ile firebase örneği tüm componentlerin üstünde tanımlar.
+
+#### Firebase için Yetkiye Göre Sayfa Yönlendirmesi
+
+```jsx
+// Girişe göre yetkilendirme (const condition = authUser => authUser != null;)
+const condition = authUser => !!authUser;
+// Rol tabanlı yetkilendirme
+const condition = authUser => authUser.role === "ADMIN";
+// İzin tabanlı yetkilendirme
+const condition = authUser => authUser.permissions.canEditAccount;
+```
 
 ## Faydalandığım Kaynaklar
 
