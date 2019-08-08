@@ -6,6 +6,8 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
 
 - [Kullanılan Teknolojiler ve Kurulumları](#Kullan%C4%B1lan-Teknolojiler-ve-Kurulumlar%C4%B1)
   - [Nodejs ve React](#Nodejs-ve-React)
+    - [Bu projenin kurulumu](#Bu-projenin-kurulumu)
+    - [Sıfırdan Kurulum](#S%C4%B1f%C4%B1rdan-Kurulum)
   - [Firebase](#Firebase)
     - [Firebase Oluşturma](#Firebase-Olu%C5%9Fturma)
     - [Firebase Kullanımı](#Firebase-Kullan%C4%B1m%C4%B1)
@@ -13,6 +15,8 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
     - [Firebase için Faydalı Notlar](#Firebase-i%C3%A7in-Faydal%C4%B1-Notlar)
 - [Faydalandığım Kaynaklar](#Faydaland%C4%B1%C4%9F%C4%B1m-Kaynaklar)
   - [İleride Bakılacaklar](#%C4%B0leride-Bak%C4%B1lacaklar)
+- [Hata Notları](#Hata-Notlar%C4%B1)
+  - [Boş sayfa gözükmesi](#Bo%C5%9F-sayfa-g%C3%B6z%C3%BCkmesi)
 - [TODO-Tree Yapılandırması](#TODO-Tree-Yap%C4%B1land%C4%B1rmas%C4%B1)
 - [Destek ve İletişim](#Destek-ve-%C4%B0leti%C5%9Fim)
 
@@ -31,6 +35,16 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
 ### Nodejs ve React
 
 - [Nodejs kurulumu](https://nodejs.org/en/download/)
+
+#### Bu projenin kurulumu
+
+- `git clone <url>` ile bu projeyi indirin
+- İndiridiğiniz projenin içine girin `cd YReact-Firebase`
+- `npm install` komutu ile gerekli modülleri yüklemeyi başlatın
+- `npm start` ile kurulumu test edin
+
+#### Sıfırdan Kurulum
+
 - `npm install -g create-react-app`
 - Projenin oluşturulacağı dizine terminal (`cmd` veya `bash`) ile gelin
 - `create-react-app <proje ismi>` yazın
@@ -138,6 +152,12 @@ Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
 
 - [How to fetch data in React](https://www.robinwieruch.de/react-fetching-data/)
 - [React's Render Props Pattern - Children as a Function](https://www.robinwieruch.de/react-render-props-pattern/)
+
+## Hata Notları
+
+### Boş sayfa gözükmesi
+
+- `.env` dosyanızı koyamazsanız firebase'e bağlanılamayacağından boş sayfa gözükecektir
 
 ## TODO-Tree Yapılandırması
 
