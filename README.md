@@ -2,6 +2,8 @@
 
 React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
 
+> Son kalınan yer: [1'de Firebase Realtime Database in React](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/#react-firebase-session-handling)
+
 ## İçerikler <!-- omit in toc -->
 
 - [Kullanılan Teknolojiler ve Kurulumları](#Kullan%C4%B1lan-Teknolojiler-ve-Kurulumlar%C4%B1)
@@ -14,8 +16,10 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
     - [Firebase Üzerineden Sunum](#Firebase-%C3%9Czerineden-Sunum)
     - [Firebase için Faydalı Notlar](#Firebase-i%C3%A7in-Faydal%C4%B1-Notlar)
     - [Firebase için Yetkiye Göre Sayfa Yönlendirmesi](#Firebase-i%C3%A7in-Yetkiye-G%C3%B6re-Sayfa-Y%C3%B6nlendirmesi)
-- [Faydalandığım Kaynaklar](#Faydaland%C4%B1%C4%9F%C4%B1m-Kaynaklar)
+- [Kaynaklar](#Kaynaklar)
+  - [Kendi Notlarım ve Yararlandığım Kaynaklar](#Kendi-Notlar%C4%B1m-ve-Yararland%C4%B1%C4%9F%C4%B1m-Kaynaklar)
   - [İleride Bakılacaklar](#%C4%B0leride-Bak%C4%B1lacaklar)
+  - [Çalışma Kaynakları](#%C3%87al%C4%B1%C5%9Fma-Kaynaklar%C4%B1)
 - [Hata Notları](#Hata-Notlar%C4%B1)
   - [Boş sayfa gözükmesi](#Bo%C5%9F-sayfa-g%C3%B6z%C3%BCkmesi)
 - [TODO-Tree Yapılandırması](#TODO-Tree-Yap%C4%B1land%C4%B1rmas%C4%B1)
@@ -30,8 +34,6 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
 | [Firebase](https://firebase.google.com/)                      | Google'ın sunduğu çok verimli (auth, data storage ...) database sistemi                                                                                                      |
 | [Recompose](https://github.com/acdlite/recompose)             | `withX(withX(withX...(component)))` yapısındaki karmaşıklığı engelleyerek tek metotda (`compose`) kullanmayı sağlar                                                          |
 | React Context API                                             | En üst bileşenlerden en alt bileşenlere veri (`state`) göndermek için her bir bileşenden verinin aktarılması lazım, bu yapı sayesinde veriler direkt olarak aktarılabilmekte |
-
-> Son kalınan yer: [Password Reset and Password Change with Firebase 🔥](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/#react-firebase-session-handling)
 
 ### Nodejs ve React
 
@@ -153,7 +155,11 @@ const condition = authUser => authUser.role === "ADMIN";
 const condition = authUser => authUser.permissions.canEditAccount;
 ```
 
-## Faydalandığım Kaynaklar
+## Kaynaklar
+
+### Kendi Notlarım ve Yararlandığım Kaynaklar
+
+Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
 
 - [A Firebase in React Tutorial for Beginners](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/)
 - [Firebase Tutorial](https://www.robinwieruch.de/firebase-tutorial/)
@@ -164,6 +170,21 @@ const condition = authUser => authUser.permissions.canEditAccount;
 
 - [How to fetch data in React](https://www.robinwieruch.de/react-fetching-data/)
 - [React's Render Props Pattern - Children as a Function](https://www.robinwieruch.de/react-render-props-pattern/)
+
+### Çalışma Kaynakları
+
+Çalışma kitapları 📚 [book](./book) dizininde mevcuttur.
+
+1. [A Firebase in React Tutorial for Beginners](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial)
+2. [React Firebase Authorization with Roles](https://www.robinwieruch.de/react-firebase-authorization-roles-permissions)
+3. [React Firebase Auth Persistence with Local Storage](https://www.robinwieruch.de/react-firebase-auth-persistence)
+4. [React Firebase Social Login: Google, Facebook, Twitter](https://www.robinwieruch.de/react-firebase-social-login)
+5. [React Firebase: Link Social Logins](https://www.robinwieruch.de/react-firebase-link-social-logins)
+6. [React Firebase: Email Verification](https://www.robinwieruch.de/react-firebase-email-verification)
+7. [How to use React Router with Firebase](https://www.robinwieruch.de/react-firebase-router)
+8. [How to use Firebase Realtime Database in React](https://www.robinwieruch.de/react-firebase-realtime-database)
+9. [How to deploy a React application to Firebase](https://www.robinwieruch.de/firebase-deploy-react-js)
+10. [How to use Redux in React Firebase](https://www.robinwieruch.de/react-firebase-redux-tutorial/)
 
 ## Hata Notları
 
