@@ -1,5 +1,6 @@
 import app from "firebase/app";
 import "firebase/auth";
+import "firebase/database";
 
 // !TIP: Firebase yapılandırması
 const config = {
@@ -16,11 +17,12 @@ class Firebase {
   constructor() {
     app.initializeApp(config);
 
-    // Firebase kimlik kontrolü
+    // Firebase kimlik kontrolü ve database objesi
     this.auth = app.auth();
+    this.database = app.database();
   }
 
-  // !TIP Firebase işlemleri
+  // !TIP Firebase güvenilirlik işlemleri
   // Daha fazlası için: https://firebase.google.com/docs/auth/web/start
 
   doCreateUserWithEmailAndPassword = (email, password) =>
@@ -33,6 +35,11 @@ class Firebase {
 
   doPasswordReset = email => this.auth.sendPasswordResetEmail(email);
   doPasswordUpdate = password => this.auth.currentUser.updatePassword(password);
+
+  // !TIP: Firebase kullanıcı işlemleri (user API)
+  // In Firebase, the RESTful URI becomes a simple path, and the HTTP methods become Firebase’s API.
+  user = uid => this.database.ref(`users/${uid}`);
+  users = () => this.database.ref(`users`);
 }
 
 export default Firebase;
