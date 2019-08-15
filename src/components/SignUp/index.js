@@ -29,18 +29,28 @@ class SignUpFormBase extends Component {
   }
 
   onSubmit = event => {
-    const { email, passwordOne } = this.state;
+    const { username, email, passwordOne } = this.state;
     this.props.firebase
       .doCreateUserWithEmailAndPassword(email, passwordOne)
+      // TIP: Kayıt başarılı olduğunda yapılacaklar
+
+      // Kullanıcı bilgilerini database'e kaydetme
       .then(authUser => {
-        // !TIP: Kayıt başarılı olduğunda yapılacaklar
+        return this.props.firebase.user(authUser.user.uid).set({
+          username,
+          email
+        });
+      })
+
+      .then(() => {
         this.setState({ ...INITIAL_STATE });
 
         // Sayfa yönlendirme işlemi
         this.props.history.push(ROUTES.HOME);
       })
+
       .catch(error => {
-        // !TIP: Kayıt başaarısız olduğunda yapılacaklar
+        // TIP: Kayıt başaarısız olduğunda yapılacaklar
         this.setState({ error });
       });
 
