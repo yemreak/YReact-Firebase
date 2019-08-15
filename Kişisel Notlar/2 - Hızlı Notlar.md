@@ -100,13 +100,3 @@ export default Firebase;
 export { FirebaseContext, withFirebase };
 ```
 
-### Firebase Database Notları
-
-- In Firebase, the RESTful URI becomes a simple path, and the HTTP methods become Firebase’s API.
-- [Firebase tutorial](https://www.robinwieruch.de/firebase-tutorial/)
-- [Firebase hangi database seçmeliyim?](https://firebase.google.com/docs/database/rtdb-vs-firestore)
-- [Firebase fiyatlandırması](https://firebase.google.com/pricing)
-
-### Firebase Hosting
-
-- [Firebase hosting'i iptal etme](https://stackoverflow.com/a/44584220)

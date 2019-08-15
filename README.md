@@ -6,197 +6,55 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
 
 ## İçerikler <!-- omit in toc -->
 
-- [Kullanılan Teknolojiler ve Kurulumları](#Kullan%C4%B1lan-Teknolojiler-ve-Kurulumlar%C4%B1)
-  - [Nodejs ve React](#Nodejs-ve-React)
-    - [Bu projenin kurulumu](#Bu-projenin-kurulumu)
-    - [Sıfırdan Kurulum](#S%C4%B1f%C4%B1rdan-Kurulum)
-  - [Firebase](#Firebase)
-    - [Firebase Oluşturma](#Firebase-Olu%C5%9Fturma)
-    - [Firebase Kullanımı](#Firebase-Kullan%C4%B1m%C4%B1)
-    - [Firebase Üzerineden Sunum](#Firebase-%C3%9Czerineden-Sunum)
-    - [Firebase için Faydalı Notlar](#Firebase-i%C3%A7in-Faydal%C4%B1-Notlar)
-    - [Firebase için Yetkiye Göre Sayfa Yönlendirmesi](#Firebase-i%C3%A7in-Yetkiye-G%C3%B6re-Sayfa-Y%C3%B6nlendirmesi)
-- [Kaynaklar](#Kaynaklar)
-  - [Kendi Notlarım ve Yararlandığım Kaynaklar](#Kendi-Notlar%C4%B1m-ve-Yararland%C4%B1%C4%9F%C4%B1m-Kaynaklar)
-  - [İleride Bakılacaklar](#%C4%B0leride-Bak%C4%B1lacaklar)
-  - [Çalışma Kaynakları](#%C3%87al%C4%B1%C5%9Fma-Kaynaklar%C4%B1)
-- [Hata Notları](#Hata-Notlar%C4%B1)
-  - [Boş sayfa gözükmesi](#Bo%C5%9F-sayfa-g%C3%B6z%C3%BCkmesi)
-- [TODO-Tree Yapılandırması](#TODO-Tree-Yap%C4%B1land%C4%B1rmas%C4%B1)
+- [Açıklama](#A%C3%A7%C4%B1klama)
+- [Projenin Temel İlerleyişi](#Projenin-Temel-%C4%B0lerleyi%C5%9Fi)
+  - [A Firebase in React Tutorial for Beginners](#A-Firebase-in-React-Tutorial-for-Beginners)
+- [Ek Notlar](#Ek-Notlar)
+  - [Çalıştırıldığında boş sayfa gözükmesi](#%C3%87al%C4%B1%C5%9Ft%C4%B1r%C4%B1ld%C4%B1%C4%9F%C4%B1nda-bo%C5%9F-sayfa-g%C3%B6z%C3%BCkmesi)
+  - [TODO-Tree Yapılandırması](#TODO-Tree-Yap%C4%B1land%C4%B1rmas%C4%B1)
 - [Destek ve İletişim](#Destek-ve-%C4%B0leti%C5%9Fim)
 
-## Kullanılan Teknolojiler ve Kurulumları
+## Açıklama
 
-| Teknoloji                                                     | Açıklama                                                                                                                                                                     |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [React](https://reactjs.org/)                                 | Facebook'un oluşturmuş olduğun web framework'u                                                                                                                               |
-| [React Router](https://github.com/ReactTraining/react-router) | Her sayfa değişikliğinde yeniden sunucuya istek atılmaz, sadece giriş kısmında tüm sayfalar sunucudan alınır                                                                 |
-| [Firebase](https://firebase.google.com/)                      | Google'ın sunduğu çok verimli (auth, data storage ...) database sistemi                                                                                                      |
-| [Recompose](https://github.com/acdlite/recompose)             | `withX(withX(withX...(component)))` yapısındaki karmaşıklığı engelleyerek tek metotda (`compose`) kullanmayı sağlar                                                          |
-| React Context API                                             | En üst bileşenlerden en alt bileşenlere veri (`state`) göndermek için her bir bileşenden verinin aktarılması lazım, bu yapı sayesinde veriler direkt olarak aktarılabilmekte |
+- Kişisel notlarım [Kişisel Notlar 📔](Ki%C5%9Fisel%20Notlar) dizinindedir
+- Faydalı kitaplar [Kitaplar 📚](Kitaplar) dizinindedir.
+- Faydalı kaynaklar listem için [buraya 🌟](Kişisel%20Notlar/X%20-%20Faydalı%20Kaynaklar.md) bakabilirsin.
 
-### Nodejs ve React
+> Data Science notlarım için [YDataScience 📊](https://github.com/yedhrab/YDataScience) _repository_'isine bakabilirsin.
 
-- [Nodejs kurulumu](https://nodejs.org/en/download/)
+## Projenin Temel İlerleyişi
 
-#### Bu projenin kurulumu
+Her yeni fonksiyon için **commit** yapılmıştır, commitler üzerinden takip edebilirsin.
 
-- `git clone <url>` ile bu projeyi indirin
-- İndiridiğiniz projenin içine girin `cd YReact-Firebase`
-- `npm install` komutu ile gerekli modülleri yüklemeyi başlatın
-- Firebase üzerinden bilgilerinizi `.env` dosyası oluşturarak içine yazın
-  - Detaylı bilgi için **Firebase Kullanımı** alanına bakın
-  - `.env` dosyası oluşturulmazsa **boş sayfa** gösterecektir
-- `npm start` ile kurulumu test edin
+### A Firebase in React Tutorial for Beginners
 
-#### Sıfırdan Kurulum
+Kursun sitesi için [buraya](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/) bakabilirsin.
 
-- `npm install -g create-react-app`
-- Projenin oluşturulacağı dizine terminal (`cmd` veya `bash`) ile gelin
-- `create-react-app <proje ismi>` yazın
-  - Örn: `YReact-Firebase`
-- `cd <proje ismi>` ile proje dizinine girin
-- `npm start` ile projeyi test edin
+- React ve React router temelleri atıldı ⚛
+- Temel navigasyon yapısı oluşturuldu 🧭
+- Firebase 🔥 bağlantısı kuruldu
+- Firebase 🔥 bağlantısı ve auth işlemleri oluşturuldu
+- Giriş yapıldığında sayfa yönlendirmesi ↗
+- Recompose yapısı eklendi 🕯
+- Giriş yapma fonksiyonu eklendi 🎟
+- Çıkış yapma fonksiyonu eklendi 🚶‍♂️
+- Firebase 🔥 üzerinde oturuma göre işlemler
+- React Context API ⚛ ile daha temiz yapı oluşturuldu ✨
+- Şifre sıfırlama alanı eklendi 🔐
+- Şifre değiştirme alanı eklendi 🔐
+- Koşullu sayfa yönlendirme eklendi 🔐
+- Database 📂 temelleri atıldı
+- Kullanıcı kayıtları database'e de eklenmekte 📅
+- Admin 👨 sayfası eklendi
+- Kurs tamamlandı 🚀
 
-<details>
-<summary>Router için örnek dizin yapısı</summary>
+## Ek Notlar
 
-```sh
-cd src
-rm App.js App.test.js App.css logo.svg
-
-mkdir components
-cd components
-mkdir Account Admin App Home Landing SignIn SignOut SignUp
-mkdir Navigation PasswordChange PasswordForget
-mkdir Session Firebase
-
-cd App
-touch index.js
-cd ..
-
-mkdir constants
-cd constants
-touch routes.js roles.js
-cd ..
-```
-
-</details>
-
-### Firebase
-
-#### Firebase Oluşturma
-
-- [Firebase](https://firebase.google.com/) sitesine **Google Hesabınız** ile giriş yapın
-- Gerekli yönergeleri takip edip
-  - Database oluşturun
-  - `Add app` alanından **Web** kısmını seçin
-- Firebase SDK snipped alanından `Config` kısmını seçin
-
-```js
-// Örnek config
-const firebaseConfig = {
-  apiKey: "XXXXxxxx",
-  authDomain: "xxxxXXXX.firebaseapp.com",
-  databaseURL: "https://xxxXXXX.firebaseio.comm",
-  projectId: "xxxxXXXX",
-  storageBucket: "",
-  messagingSenderId: "xxxxXXXX",
-  appId: "X:xxxxxxxxxx:xxx:xxxxxxxxx"
-};
-```
-
-#### Firebase Kullanımı
-
-- Firebase bilgileri `.env` adlı dosya ile oluşturulmalıdır
-- Projede `process.env` olarak Env dosyaları alınmaktadır.
-- Env dosyaları projenin ana dizininde olmalı
-  - İstersenin tek bir `.env` dosyası ile yönetebilirsiniz
-  - Ya da özelleştirilmiş olarak kullanılabilir
-    - `.env.development`
-    - `.env.production`
-
-```env
-# Firebase config
-REACT_APP_API_KEY=XXXXxxxx
-REACT_APP_AUTH_DOMAIN=xxxxXXXX.firebaseapp.com
-REACT_APP_DATABASE_URL=https://xxxXXXX.firebaseio.com
-REACT_APP_PROJECT_ID=xxxxXXXX
-REACT_APP_STORAGE_BUCKET=xxxxXXXX.appspot.com
-REACT_APP_MESSAGING_SENDER_ID=xxxxXXXX
-REACT_APP_APP_ID=X:xxxxxxxxxx:xxx:xxxxxxxxx
-```
-
-#### Firebase Üzerineden Sunum
-
-Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
-
-| Komut           | Açılama                                        |
-| --------------- | ---------------------------------------------- |
-| firebase login  | Firebase'e giriş (Google hesabı ile)           |
-| firebase init   | Firebase'de serilenmeden önce hazırlama eylemi |
-| firebase deploy | Firebase üzerinden sunma                       |
-
-#### Firebase için Faydalı Notlar
-
-Çok sık tercih edilen **Firebase class'ı oluşturup, her _component_ için onu çağırmak** eylemi sorunlara sebeb olur, çünkü:
-
-- React bileşenlerini test etmesi çok zorlaşır
-- Firebase tek seferlik tanımlanması gereken bir sistem içerir (singleton)
-  - Aksi halde hata eğilimli bir davranış sergiler.
-
-> [React Context API](https://www.robinwieruch.de/react-context-api/) tercih edilmelidir. Bu sistem ile firebase örneği tüm componentlerin üstünde tanımlar.
-
-#### Firebase için Yetkiye Göre Sayfa Yönlendirmesi
-
-```jsx
-// Girişe göre yetkilendirme (const condition = authUser => authUser != null;)
-const condition = authUser => !!authUser;
-// Rol tabanlı yetkilendirme
-const condition = authUser => authUser.role === "ADMIN";
-// İzin tabanlı yetkilendirme
-const condition = authUser => authUser.permissions.canEditAccount;
-```
-
-## Kaynaklar
-
-### Kendi Notlarım ve Yararlandığım Kaynaklar
-
-Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
-
-- [A Firebase in React Tutorial for Beginners](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/)
-- [Firebase Tutorial](https://www.robinwieruch.de/firebase-tutorial/)
-- [React Kitapları](https://drive.google.com/open?id=1JFHiLsMys29fGLcYMweU33hExWtyG2zV)
-- [Firebase Web İşlemleri](https://firebase.google.com/docs/auth/web/start)
-
-### İleride Bakılacaklar
-
-- [How to fetch data in React](https://www.robinwieruch.de/react-fetching-data/)
-- [React's Render Props Pattern - Children as a Function](https://www.robinwieruch.de/react-render-props-pattern/)
-- [Reactjs Interview Questions](https://github.com/sudheerj/reactjs-interview-questions)
-
-### Çalışma Kaynakları
-
-Çalışma kitapları 📚 [book](./book) dizininde mevcuttur.
-
-1. [A Firebase in React Tutorial for Beginners](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial)
-2. [React Firebase Authorization with Roles](https://www.robinwieruch.de/react-firebase-authorization-roles-permissions)
-3. [React Firebase Auth Persistence with Local Storage](https://www.robinwieruch.de/react-firebase-auth-persistence)
-4. [React Firebase Social Login: Google, Facebook, Twitter](https://www.robinwieruch.de/react-firebase-social-login)
-5. [React Firebase: Link Social Logins](https://www.robinwieruch.de/react-firebase-link-social-logins)
-6. [React Firebase: Email Verification](https://www.robinwieruch.de/react-firebase-email-verification)
-7. [How to use React Router with Firebase](https://www.robinwieruch.de/react-firebase-router)
-8. [How to use Firebase Realtime Database in React](https://www.robinwieruch.de/react-firebase-realtime-database)
-9. [How to deploy a React application to Firebase](https://www.robinwieruch.de/firebase-deploy-react-js)
-10. [How to use Redux in React Firebase](https://www.robinwieruch.de/react-firebase-redux-tutorial/)
-
-## Hata Notları
-
-### Boş sayfa gözükmesi
+### Çalıştırıldığında boş sayfa gözükmesi
 
 - `.env` dosyanızı koyamazsanız firebase'e bağlanılamayacağından boş sayfa gözükecektir
 
-## TODO-Tree Yapılandırması
+### TODO-Tree Yapılandırması
 
 ![](res/todo_tree.png)
 
