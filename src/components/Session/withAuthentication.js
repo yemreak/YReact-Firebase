@@ -3,6 +3,10 @@ import React from "react";
 import AuthUserContext from "./context";
 import { withFirebase } from "../Firebase";
 
+/**
+ * Verilen component'e `authUser` state'ine erişim hakkı verir
+ * @param {React.Component} Component React componenti
+ */
 const withAuthentication = Component => {
   class WithAuthentication extends React.Component {
     constructor(props) {
