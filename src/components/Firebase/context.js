@@ -2,7 +2,7 @@ import React from "react";
 
 const FirebaseContext = React.createContext(null);
 
-// !TIP: Firebase ile component kullanımı
+// TIP: Firebase ile component kullanımı
 
 /**
  * Firebase props'una erişim hakkı ile componenti çağırma

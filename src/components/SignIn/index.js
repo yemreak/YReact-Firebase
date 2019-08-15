@@ -36,12 +36,12 @@ class SignInFormBase extends Component {
     this.props.firebase
       .doSignInWithEmailAndPassword(email, password)
       .then(() => {
-        // !TIP: Giriş başarılı olduğunda yapılacaklar
+        // TIP: Giriş başarılı olduğunda yapılacaklar
         this.setState({ ...INITIAL_STATE });
         this.props.history.push(ROUTES.HOME);
       })
       .catch(error => {
-        // !TIP: Giriş başarısız olduğunda yapılacaklar
+        // TIP: Giriş başarısız olduğunda yapılacaklar
         this.setState({ error });
       });
 

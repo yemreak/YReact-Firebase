@@ -6,7 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import App from "./components/App";
 import Firebase, { FirebaseContext } from "./components/Firebase";
 
-// !TIP: Firebase'in tüm componentler için tanımlanması (React Context API)
+// TIP: Firebase'in tüm componentler için tanımlanması (React Context API)
 // React Context API ile firebase tüm componentlerin üstünde tanımlanmıştır
 ReactDOM.render(
   <FirebaseContext.Provider value={new Firebase()}>

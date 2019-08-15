@@ -14,8 +14,8 @@ const withAuthentication = Component => {
     }
 
     componentDidMount() {
-      // !TIP: Giriş yapıldı mı kontorlü
-      // !WARN: Listener component unmount olduğunda kaldırlmazsa performans kaybına neden olur.
+      // TIP: Giriş yapıldı mı kontorlü
+      // WARN: Listener component unmount olduğunda kaldırlmazsa performans kaybına neden olur.
       this.listener = this.props.firebase.auth.onAuthStateChanged(authUser => {
         authUser
           ? this.setState({ authUser })

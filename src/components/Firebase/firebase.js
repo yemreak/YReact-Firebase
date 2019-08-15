@@ -2,7 +2,7 @@ import app from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 
-// !TIP: Firebase yapılandırması
+// TIP: Firebase yapılandırması
 const config = {
   apiKey: process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
@@ -22,7 +22,7 @@ class Firebase {
     this.database = app.database();
   }
 
-  // !TIP Firebase güvenilirlik işlemleri
+  // TIP: Firebase güvenilirlik işlemleri
   // Daha fazlası için: https://firebase.google.com/docs/auth/web/start
 
   doCreateUserWithEmailAndPassword = (email, password) =>
@@ -36,7 +36,7 @@ class Firebase {
   doPasswordReset = email => this.auth.sendPasswordResetEmail(email);
   doPasswordUpdate = password => this.auth.currentUser.updatePassword(password);
 
-  // !TIP: Firebase kullanıcı işlemleri (user API)
+  // TIP: Firebase kullanıcı işlemleri (user API)
   // In Firebase, the RESTful URI becomes a simple path, and the HTTP methods become Firebase’s API.
   user = uid => this.database.ref(`users/${uid}`);
   users = () => this.database.ref(`users`);

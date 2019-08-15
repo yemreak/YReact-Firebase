@@ -9,7 +9,7 @@ import AuthUserContext from "./context";
 
 import * as ROUTES from "../constants/routes";
 
-// !TIP: Koşullu yönlendirme yapısı
+// TIP: Koşullu yönlendirme yapısı
 
 /**
  * Koşullu olarak `SIGN_IN` sayfasına yönlendirme

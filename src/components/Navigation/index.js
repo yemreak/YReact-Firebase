@@ -5,7 +5,7 @@ import { AuthUserContext } from "../Session";
 import * as ROUTES from "../constants/routes";
 import SignOutButton from "../SignOut";
 
-// !TIP: Sayfa yönlendirme işlemleri
+// TIP: Sayfa yönlendirme işlemleri
 
 const Navigation = () => (
   <AuthUserContext.Consumer>
