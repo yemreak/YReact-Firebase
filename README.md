@@ -2,7 +2,7 @@
 
 React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
 
-> Son kalınan yer: [1'de Firebase Realtime Database in React](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/#react-firebase-session-handling)
+> Son tamamlanan kurs: [A Firebase in React Tutorial for Beginners [2019]](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/)
 
 ## İçerikler <!-- omit in toc -->
 
@@ -173,6 +173,7 @@ Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
 
 - [How to fetch data in React](https://www.robinwieruch.de/react-fetching-data/)
 - [React's Render Props Pattern - Children as a Function](https://www.robinwieruch.de/react-render-props-pattern/)
+- [Reactjs Interview Questions](https://github.com/sudheerj/reactjs-interview-questions)
 
 ### Çalışma Kaynakları
 
@@ -204,7 +205,7 @@ Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
 
 ```json
 {
-  "todo-tree.tags": ["!TODO", "!BUG", "!DEV", "!RES", "!OLD", "!WARN", "!TIP"],
+  "todo-tree.tags": ["TODO:", "BUG:", "DEV:", "RES:", "OLD:", "WARN:", "TIP:"],
   "todo-tree.labelFormat": "${after}", // (${line})
   "todo-tree.tagsOnly": true,
   "todo-tree.defaultHighlight": {
@@ -215,7 +216,7 @@ Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
     "iconColour": "#6FA5FF"
   },
   "todo-tree.customHighlight": {
-    "!TIP": {
+    "TIP:": {
       "icon": "book",
       "type": "text",
       "foreground": "#f5f2a9",
@@ -223,7 +224,7 @@ Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
       "opacity": 7,
       "iconColour": "#f5f2a9"
     },
-    "!TODO": {
+    "TODO:": {
       "icon": "checklist",
       "type": "text",
       "fontStyle": "normal",
@@ -232,7 +233,7 @@ Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
       "opacity": 7,
       "iconColour": "#6FA5FF"
     },
-    "!BUG": {
+    "BUG:": {
       "icon": "bug",
       "type": "text",
       "foreground": "#FF2C2C",
@@ -240,7 +241,7 @@ Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
       "opacity": 7,
       "iconColour": "#FF2C2C"
     },
-    "!DEV": {
+    "DEV:": {
       "icon": "telescope",
       "type": "text",
       "foreground": "#72CB6A",
@@ -248,7 +249,7 @@ Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
       "opacity": 7,
       "iconColour": "#72CB6A"
     },
-    "!RES": {
+    "RES:": {
       "icon": "beaker",
       "type": "text",
       "foreground": "#9CF7FF",
@@ -256,7 +257,7 @@ Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
       "opacity": 7,
       "iconColour": "#9CF7FF"
     },
-    "!WARN": {
+    "WARN:": {
       "icon": "megaphone",
       "type": "text",
       "foreground": "#CFCC35",
@@ -264,7 +265,7 @@ Kişisel notlarım 📔 [doc](./doc) dizininde mevcuttur.
       "opacity": 7,
       "iconColour": "#CFCC35"
     },
-    "!OLD": {
+    "OLD:": {
       "icon": "trashcan",
       "type": "text",
       "foreground": "#959595",
