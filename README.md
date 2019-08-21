@@ -7,8 +7,6 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
 ## İçerikler <!-- omit in toc -->
 
 - [Açıklama](#A%C3%A7%C4%B1klama)
-- [Projenin Temel İlerleyişi](#Projenin-Temel-%C4%B0lerleyi%C5%9Fi)
-  - [A Firebase in React Tutorial for Beginners](#A-Firebase-in-React-Tutorial-for-Beginners)
 - [Ek Notlar](#Ek-Notlar)
   - [Çalıştırıldığında boş sayfa gözükmesi](#%C3%87al%C4%B1%C5%9Ft%C4%B1r%C4%B1ld%C4%B1%C4%9F%C4%B1nda-bo%C5%9F-sayfa-g%C3%B6z%C3%BCkmesi)
   - [TODO-Tree Yapılandırması](#TODO-Tree-Yap%C4%B1land%C4%B1rmas%C4%B1)
@@ -16,37 +14,12 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
 
 ## Açıklama
 
+- [Projenin temel ilerleyişi 🚶‍♂️](Ki%C5%9Fisel%20Notlar%5CY%20-%20Projenin%20Temel%20%C4%B0lerleyi%C5%9Fi.md) için **commit**'leri veya açıklama dosyama bakabilirsin.
 - Kişisel notlarım [Kişisel Notlar 📔](Ki%C5%9Fisel%20Notlar) dizinindedir
 - Faydalı kitaplar [Kitaplar 📚](Kitaplar) dizinindedir.
 - Faydalı kaynaklar listem için [buraya 🌟](Kişisel%20Notlar/X%20-%20Faydalı%20Kaynaklar.md) bakabilirsin.
 
 > Data Science notlarım için [YDataScience 📊](https://github.com/yedhrab/YDataScience) _repository_'isine bakabilirsin.
-
-## Projenin Temel İlerleyişi
-
-Her yeni fonksiyon için **commit** yapılmıştır, commitler üzerinden takip edebilirsin.
-
-### A Firebase in React Tutorial for Beginners
-
-Kursun sitesi için [buraya](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/) bakabilirsin.
-
-- React ve React router temelleri atıldı ⚛
-- Temel navigasyon yapısı oluşturuldu 🧭
-- Firebase 🔥 bağlantısı kuruldu
-- Firebase 🔥 bağlantısı ve auth işlemleri oluşturuldu
-- Giriş yapıldığında sayfa yönlendirmesi ↗
-- Recompose yapısı eklendi 🕯
-- Giriş yapma fonksiyonu eklendi 🎟
-- Çıkış yapma fonksiyonu eklendi 🚶‍♂️
-- Firebase 🔥 üzerinde oturuma göre işlemler
-- React Context API ⚛ ile daha temiz yapı oluşturuldu ✨
-- Şifre sıfırlama alanı eklendi 🔐
-- Şifre değiştirme alanı eklendi 🔐
-- Koşullu sayfa yönlendirme eklendi 🔐
-- Database 📂 temelleri atıldı
-- Kullanıcı kayıtları database'e de eklenmekte 📅
-- Admin 👨 sayfası eklendi
-- Kurs tamamlandı 🚀
 
 ## Ek Notlar
 
