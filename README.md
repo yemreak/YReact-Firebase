@@ -14,7 +14,7 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
 
 ## Açıklama
 
-- [Projenin temel ilerleyişi 🚶‍♂️](Ki%C5%9Fisel%20Notlar%5CY%20-%20Projenin%20Temel%20%C4%B0lerleyi%C5%9Fi.md) için **commit**'leri veya açıklama dosyama bakabilirsin.
+- [Projenin temel ilerleyişi 🚶‍♂️](Kişisel%20Notlar/Y%20-%20Projenin%20Temel%20İlerleyişi.md) için **commit**'leri veya açıklama dosyama bakabilirsin.
 - Kişisel notlarım [Kişisel Notlar 📔](Ki%C5%9Fisel%20Notlar) dizinindedir
 - Faydalı kitaplar [Kitaplar 📚](Kitaplar) dizinindedir.
 - Faydalı kaynaklar listem için [buraya 🌟](Kişisel%20Notlar/X%20-%20Faydalı%20Kaynaklar.md) bakabilirsin.
