@@ -2,6 +2,20 @@
 
 Her yeni fonksiyon için **commit** yapılmıştır, commitler üzerinden takip edebilirsin.
 
+## Tamamlanan Kurslar
+
+1. [A Firebase in React Tutorial for Beginners](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial) ✔
+2. [React Firebase Authorization with Roles](https://www.robinwieruch.de/react-firebase-authorization-roles-permissions)
+3. [React Firebase Auth Persistence with Local Storage](https://www.robinwieruch.de/react-firebase-auth-persistence)
+4. [React Firebase Social Login: Google, Facebook, Twitter](https://www.robinwieruch.de/react-firebase-social-login)
+5. [React Firebase: Link Social Logins](https://www.robinwieruch.de/react-firebase-link-social-logins)
+6. [React Firebase: Email Verification](https://www.robinwieruch.de/react-firebase-email-verification)
+7. [How to use React Router with Firebase](https://www.robinwieruch.de/react-firebase-router)
+8. [How to use Firebase Realtime Database in React](https://www.robinwieruch.de/react-firebase-realtime-database)
+9. [How to deploy a React application to Firebase](https://www.robinwieruch.de/firebase-deploy-react-js) ✔
+10. [How to use Redux in React Firebase](https://www.robinwieruch.de/react-firebase-redux-tutorial/)
+
+
 ## Firebase ve React ile Giriş İşlemleri
 
 Kursun sitesi için [A Firebase in React Tutorial for Beginners](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/) bakabilirsin.
