@@ -1,6 +1,6 @@
 # YReact-Firebase <!-- omit in toc -->
 
-React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi
+React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://yreact-firebase.firebaseapp.com/))
 
 > Son tamamlanan kurs: [A Firebase in React Tutorial for Beginners [2019]](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial/)
 

@@ -7,7 +7,7 @@ Google'ın sunduğu online database 📅 servisidir.
 - [Firebase Oluşturma](#Firebase-Olu%C5%9Fturma)
 - [Firebase Kullanımı](#Firebase-Kullan%C4%B1m%C4%B1)
 - [Firebase Database Notları](#Firebase-Database-Notlar%C4%B1)
-- [Firebase Üzerineden Sunum](#Firebase-%C3%9Czerineden-Sunum)
+- [Firebase Üzerineden Sunum (Hosting / Deploy)](#Firebase-%C3%9Czerineden-Sunum-Hosting--Deploy)
 - [Firebase için Faydalı Notlar](#Firebase-i%C3%A7in-Faydal%C4%B1-Notlar)
   - [Firebase için Yetkiye Göre Sayfa Yönlendirmesi](#Firebase-i%C3%A7in-Yetkiye-G%C3%B6re-Sayfa-Y%C3%B6nlendirmesi)
 
@@ -61,9 +61,9 @@ REACT_APP_APP_ID=X:xxxxxxxxxx:xxx:xxxxxxxxx
 - [Firebase fiyatlandırması](https://firebase.google.com/pricing)
 
 
-## Firebase Üzerineden Sunum
+## Firebase Üzerineden Sunum (Hosting / Deploy)
 
-Firebase CLI kurulumunu `npm install -g firebase-tools` ile yapın
+Detaylar için [How to deploy a React application to Firebase](https://www.robinwieruch.de/firebase-deploy-react-js/) sayfasına bakabilirsin.
 
 | Komut           | Açılama                                        |
 | --------------- | ---------------------------------------------- |
