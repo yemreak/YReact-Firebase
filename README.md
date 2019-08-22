@@ -36,9 +36,22 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
 
 ```json
 {
-  "todo-tree.tags": ["TODO:", "BUG:", "DEV:", "RES:", "OLD:", "WARN:", "TIP:"],
+// Todo-Tree ayarları
+  "todo-tree.tags": [
+    "TODO:",
+    "BUG:",
+    "DEV:",
+    "RES:",
+    "OLD:",
+    "WARN:",
+    "TIP:"
+  ],
   "todo-tree.labelFormat": "${after}", // (${line})
+  "todo-tree.grouped": true,
   "todo-tree.tagsOnly": true,
+  "todo-tree.excludeGlobs": [
+    "**/*.json"
+  ],
   "todo-tree.defaultHighlight": {
     "icon": "tasklist",
     "type": "text",
@@ -47,6 +60,7 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
     "iconColour": "#6FA5FF"
   },
   "todo-tree.customHighlight": {
+    // TIP: Bilgiler (tip)
     "TIP:": {
       "icon": "book",
       "type": "text",
@@ -55,6 +69,7 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
       "opacity": 7,
       "iconColour": "#f5f2a9"
     },
+    // TODO:: Yapılacak (todo)
     "TODO:": {
       "icon": "checklist",
       "type": "text",
@@ -64,6 +79,7 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
       "opacity": 7,
       "iconColour": "#6FA5FF"
     },
+    // BUG: Hatalar (bug)
     "BUG:": {
       "icon": "bug",
       "type": "text",
@@ -72,6 +88,7 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
       "opacity": 7,
       "iconColour": "#FF2C2C"
     },
+    // DEV: İyileştirme, geliştirme (dev)
     "DEV:": {
       "icon": "telescope",
       "type": "text",
@@ -80,6 +97,7 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
       "opacity": 7,
       "iconColour": "#72CB6A"
     },
+    // RES: Gelecek planları, araştırmalar (res)
     "RES:": {
       "icon": "beaker",
       "type": "text",
@@ -88,6 +106,7 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
       "opacity": 7,
       "iconColour": "#9CF7FF"
     },
+    // WARN: Uyarılar (warn)
     "WARN:": {
       "icon": "megaphone",
       "type": "text",
@@ -96,6 +115,7 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
       "opacity": 7,
       "iconColour": "#CFCC35"
     },
+    // OLD: Eskimiş, kaldırılacak (deprecated)
     "OLD:": {
       "icon": "trashcan",
       "type": "text",
@@ -104,7 +124,7 @@ React ⚛️, React-Router 🔗 ve Firebase 🔥 projesi ([canlı 🌍](https://
       "opacity": 7,
       "iconColour": "#959595"
     }
-  }
+  },
 }
 ```
 
